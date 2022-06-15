@@ -1,0 +1,27 @@
+{
+  "name": "vue-draggable-yubo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "mitt": "^3.0.0",
+    "vue": "^3.2.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.1"
+  },
+  "files": ["dist"],
+  "main": "./dist/vue-draggable-yubo.umd.js",
+  "module": "./dist/vue-draggable-yubo.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-draggable-yubo.es.js",
+      "require": "./dist/vue-draggable-yubo.umd.js"
+    }
+  }
+}
